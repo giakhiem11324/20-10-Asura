@@ -5,8 +5,8 @@ Trang trải nghiệm tương tác, tách CSS, JavaScript và tài nguyên thàn
 ## Chạy trên máy
 Mở thư mục bằng VS Code và chạy Live Server từ index.html, hoặc dùng npm run dev.
 
-## Build cho Vercel
-Chạy npm run build để tạo thư mục dist.
+## Deploy trên Vercel
+Vercel phục vụ trực tiếp `index.html`, `css/`, `js/` và `assets/` từ thư mục gốc; không cần bước build. `npm run build` vẫn có thể dùng để tạo `dist/` cho bản preview.
 
 ## Cấu trúc
 - index.html: nội dung trang.
