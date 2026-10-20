@@ -1,4 +1,4 @@
-# Sự thức giấc của Tiny
+# Sự thức giấc của 666・Asura
 
 Trang trải nghiệm tương tác, tách CSS, JavaScript và tài nguyên thành các file riêng.
 
@@ -17,11 +17,10 @@ Chạy npm run build để tạo thư mục dist.
 
 ## Đơn chọn sản phẩm (Firebase Firestore)
 
-Nút **Chọn** lưu `productId` và thời gian tạo vào collection `orders`. Khi Firebase chưa cấu hình, giao diện sẽ báo rõ rằng đơn chưa được gửi.
+Nút **Chọn** lưu `productId` và thời gian tạo vào collection `orders`. Web config cho project `shop-ca90f` đã được điền trong `js/firebase-config.js`. Nút lựa chọn lưu mã sản phẩm và thời gian vào Firestore collection `orders`.
 
-1. Tạo Firebase project tại [Firebase Console](https://console.firebase.google.com/), thêm Web App và bật Cloud Firestore.
-2. Sao chép Web config vào `js/firebase-config.js` (apiKey, authDomain, projectId, appId). Đây là Web SDK config, không dùng service-account/private key.
-3. Dán nội dung `firestore.rules` vào Firestore Database > Rules rồi Publish.
-4. Triển khai lại trang. Xem đơn tại Firestore Database > Data > `orders`.
+1. Project Firebase đã được tạo và cấu hình Web App.
+2. Đảm bảo Cloud Firestore đã bật và quy tắc trong `firestore.rules` đã được Publish.
+3. Xem các đơn trong Firebase Console > Firestore Database > Data > `orders`.
 
 Quy tắc chỉ cho phép tạo đơn cho 4 mã sản phẩm được định sẵn; người truy cập không thể đọc/sửa/xóa đơn qua website. `npm run build` đóng gói các module vào `dist` để Vercel phục vụ.

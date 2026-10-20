@@ -1,0 +1,10 @@
+{
+  "name": "tiny-20-10-experience",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node build.mjs",
+    "preview": "node server.mjs --preview"
+  }
+}
